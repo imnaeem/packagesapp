@@ -1,10 +1,17 @@
 {
   "folders": [
-	{
-		"path": "packagesapp"
-	},
-	{
-		"path": "packagesapp-api"
-	}
-]
+    {
+      "name": "Flutter Mobile App",
+      "path": "packagesapp"
+    },
+    {
+      "name": "Cloudflare Worker Backend",
+      "path": "packagesapp-worker"
+    },
+    {
+      "name": "Node.js Legacy API",
+      "path": "packagesapp-api"
+    }
+  ],
+  "settings": {}
 }
