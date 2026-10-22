@@ -1,0 +1,23 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "packagesapp-worker",
+  "main": "src/index.ts",
+  "compatibility_date": "2025-02-24",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "pk-packages-db",
+      "database_id": "00000000-0000-0000-0000-000000000000"
+    }
+  ],
+  "ai": {
+    "binding": "AI"
+  },
+  "vars": {
+    "ENVIRONMENT": "development",
+    "INGEST_API_KEY": "pk_dev_ingest_secret_2026"
+  }
+}

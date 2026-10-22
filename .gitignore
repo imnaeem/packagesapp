@@ -1,0 +1,31 @@
+# Node / Cloudflare Worker
+node_modules/
+.wrangler/
+dist/
+.dev.vars.local
+
+# Flutter / Dart
+**/build/
+**/.dart_tool/
+**/.flutter-plugins
+**/.flutter-plugins-dependencies
+**/.pub/
+**/.pub-cache/
+**/pubspec.lock
+**/.packages
+
+# Android
+**/android/.gradle/
+**/android/local.properties
+**/android/captures/
+**/android/gradle/wrapper/gradle-wrapper.jar
+**/*.apk
+**/*.aab
+
+# IDE
+.idea/
+.vscode/
+*.iml
+*.swp
+*.DS_Store
+**/.git_bak/

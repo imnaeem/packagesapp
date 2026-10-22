@@ -1,0 +1,25 @@
+{
+  "name": "packagesapp-worker",
+  "version": "1.0.0",
+  "description": "High-performance Cloudflare Worker API for Pakistan Mobile Packages",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "typecheck": "tsc --noEmit",
+    "test": "node test_worker_endpoints.mjs",
+    "db:init": "wrangler d1 execute pk-packages-db --local --file=./schema.sql",
+    "db:seed": "wrangler d1 execute pk-packages-db --local --file=./seed.sql",
+    "db:init:remote": "wrangler d1 execute pk-packages-db --remote --file=./schema.sql",
+    "db:seed:remote": "wrangler d1 execute pk-packages-db --remote --file=./seed.sql"
+  },
+  "dependencies": {
+    "hono": "^4.7.4",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20261022.1",
+    "typescript": "^5.7.3",
+    "wrangler": "^4.152.0"
+  }
+}
